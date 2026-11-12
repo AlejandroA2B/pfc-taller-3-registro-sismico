@@ -16,7 +16,7 @@ la nota.
 
 | Nombre completo | Código |
 |---|---|
-| | |
+|Alejandro galeano Castro|2477228 |galeano.alejandro@correounivalle.edu.co
 | | |
 | | |
 | | |
