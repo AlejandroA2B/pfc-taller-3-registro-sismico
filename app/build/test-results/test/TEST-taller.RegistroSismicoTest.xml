@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="taller.RegistroSismicoTest" tests="108" skipped="0" failures="0" errors="0" timestamp="2026-11-12T20:16:47" hostname="LAPTOP-RHUNQJLR" time="0.451">
+  <properties/>
+  <testcase name="fuertes: los que superan 5.0, en orden" classname="taller.RegistroSismicoTest" time="0.057"/>
+  <testcase name="fuertes: con un umbral alto no queda ninguno" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="fuertes: conserva los repetidos" classname="taller.RegistroSismicoTest" time="0.003"/>
+  <testcase name="fuertes: el umbral es estricto" classname="taller.RegistroSismicoTest" time="0.003"/>
+  <testcase name="enRegion: las magnitudes del Valle" classname="taller.RegistroSismicoTest" time="0.008"/>
+  <testcase name="enRegion: una región que no está da la lista vacía" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="enRegion: sobre el registro vacío no hay magnitudes" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="paresCercanos: con 0.6 solo Valle y Santander" classname="taller.RegistroSismicoTest" time="0.032"/>
+  <testcase name="paresCercanos: con 1.0 salen las tres parejas, en orden de aparición" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="paresCercanos: con 0.1 no hay ninguna" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="paresCercanos: cada pareja sale una sola vez" classname="taller.RegistroSismicoTest" time="0.015"/>
+  <testcase name="paresCercanos: nunca empareja una región consigo misma" classname="taller.RegistroSismicoTest" time="0.003"/>
+  <testcase name="fuertes: devuelve lista vacía si el umbral es mayor que todas las magnitudes" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="fuertes: umbral estricto, si la magnitud es exactamente igual al umbral no se incluye" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="fuertes: mantiene los duplicados de región si hay varios sismos fuertes" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="fuertes: respeta el orden de aparición original" classname="taller.RegistroSismicoTest" time="0.003"/>
+  <testcase name="fuertes: registro vacío" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="fuertes: umbral negativo incluye todos los sismos" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="enRegion: región inexistente devuelve lista vacía" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="enRegion: conserva el orden de las magnitudes de los sismos" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="enRegion: devuelve todas las magnitudes sin importar si están repetidas" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="enRegion: registro vacío devuelve lista vacía" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="enRegion: funciona con regiones con espacios o minúsculas exactas" classname="taller.RegistroSismicoTest" time="0.004"/>
+  <testcase name="enRegion: extrae correctamente magnitudes con decimales largos" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="paresCercanos: no repite parejas en orden inverso (A,B) vs (B,A)" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="paresCercanos: incluye el límite exacto de diferencia (&lt;= dif)" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="paresCercanos: no empareja una región consigo misma" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="paresCercanos: dif negativa no genera ninguna pareja" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="paresCercanos: registro vacío" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="paresCercanos: con una sola región no hay parejas posibles" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="porRegion: agrupa los siete sismos en tres regiones" classname="taller.RegistroSismicoTest" time="0.04"/>
+  <testcase name="conteoPorRegion: tres, dos y dos" classname="taller.RegistroSismicoTest" time="0.012"/>
+  <testcase name="magnitudMaxima: la mayor de cada región" classname="taller.RegistroSismicoTest" time="0.008"/>
+  <testcase name="conteoPorRegion: el registro vacío da el mapa vacío" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="magnitudMaxima: las regiones ausentes no aparecen" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="porRegion: conserva el orden original de los sismos dentro de cada región" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="porRegion: agrupa correctamente sismos con la misma fecha pero distinta región" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="porRegion: un registro vacío debe devolver un mapa vacío, no un error" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="porRegion: funciona con una sola región y múltiples sismos" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="porRegion: distingue entre mayúsculas y minúsculas en los nombres de región" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="porRegion: no altera los objetos Sismo originales (inmutabilidad)" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="conteoPorRegion: devuelve ceros implícitos no, solo incluye las regiones existentes" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="conteoPorRegion: cuenta correctamente un sismo por cada región" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="conteoPorRegion: registro vacío devuelve Map()" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="conteoPorRegion: cuenta correctamente cuando todos los sismos son de la misma región" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="conteoPorRegion: la suma de los valores debe ser igual al tamaño del registro" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="conteoPorRegion: maneja nombres de región con espacios o caracteres especiales" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="magnitudMaxima: el valor máximo es correcto sin importar el orden" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="magnitudMaxima: no incluye regiones ausentes (no hay valores por defecto)" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="magnitudMaxima: un registro vacío devuelve un mapa vacío" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="magnitudMaxima: maneja correctamente sismos con magnitudes idénticas" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="magnitudMaxima: conserva la precisión de los decimales largos" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="magnitudMaxima: calcula bien si hay varias regiones con máximos distintos" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="conteoSeguro: una región desconocida responde cero" classname="taller.RegistroSismicoTest" time="0.005"/>
+  <testcase name="conteoSeguro: una región conocida responde su conteo" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="conteoSeguro: sobre el registro vacío todo responde cero" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="maximaDe: el Chocó llega a 6.0" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="maximaDe: una región sin registros da vacío" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="regionMasActiva: el Valle, con tres sismos" classname="taller.RegistroSismicoTest" time="0.01"/>
+  <testcase name="regionMasActiva: sobre el registro vacío da vacío" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="regionMasActiva: en empate gana la primera alfabéticamente" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="conteoSeguro: devuelve 0 para una región inexistente sin lanzar excepción" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="conteoSeguro: no altera el mapa original agregando la llave consultada" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="conteoSeguro: funciona correctamente si hay una región con un solo sismo" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="conteoSeguro: un registro vacío devuelve 0 para cualquier consulta" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="conteoSeguro: consultar una región que sí existe devuelve su conteo real, no 0" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="conteoSeguro: es case-sensitive, una mayúscula diferente devuelve 0" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="maximaDe: devuelve None para una región que no está en el registro" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="maximaDe: devuelve Some con el valor exacto para una región conocida" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="maximaDe: el máximo no depende del orden de inserción de los sismos" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="maximaDe: funciona correctamente si la región solo tiene un sismo" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="maximaDe: un registro vacío devuelve None para cualquier región" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="maximaDe: tolera decimales largos sin perder precisión en el Some" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="regionMasActiva: caso base con un claro ganador" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="regionMasActiva: registro vacío devuelve None" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="regionMasActiva: empate de 2 regiones, gana la primera alfabéticamente" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="regionMasActiva: empate de 3 regiones, gana la primera alfabéticamente" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="regionMasActiva: gana por cantidad aunque su nombre sea mayor alfabéticamente" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="regionMasActiva: una sola región es la más activa por defecto" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="replicas: las primeras cuatro de un sismo de 5.0" classname="taller.RegistroSismicoTest" time="0.014"/>
+  <testcase name="replicas: la secuencia es infinita y no se cuelga" classname="taller.RegistroSismicoTest" time="0.004"/>
+  <testcase name="replicas: empieza en la magnitud dada" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="replicas: los valores van redondeados a dos decimales" classname="taller.RegistroSismicoTest" time="0.004"/>
+  <testcase name="replicasSensibles: las que superan 3.0 partiendo de 5.0" classname="taller.RegistroSismicoTest" time="0.004"/>
+  <testcase name="replicasSensibles: si la primera no supera el mínimo, no hay ninguna" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="replicasSensibles: el mínimo es estricto" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="replicas: multiplica por 0.8 y redondea en cada paso" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="replicas: secuencia infinita no cuelga y se puede pedir un pedazo grande" classname="taller.RegistroSismicoTest" time="0.003"/>
+  <testcase name="replicas: el redondeo no acumula error flotante" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="replicas: con magnitud 0, se queda en 0" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="replicas: empieza exactamente con la magnitud dada" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="replicas: funciona con magnitudes decimales" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="replicasSensibles: devuelve vacío si la primera no supera el mínimo" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="replicasSensibles: el mínimo es estricto (&gt;) y no incluye el igual" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="replicasSensibles: termina correctamente en el borde exacto" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="replicasSensibles: caso de un solo elemento porque el mínimo es muy alto" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="replicasSensibles: respeta el redondeo a dos decimales en la condición del mínimo" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="informe: el resumen de las tres regiones" classname="taller.RegistroSismicoTest" time="0.007"/>
+  <testcase name="informe: el registro vacío da el mapa vacío" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="informe: el conteo coincide con conteoPorRegion" classname="taller.RegistroSismicoTest" time="0.005"/>
+  <testcase name="informe: la máxima coincide con magnitudMaxima" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="informe: las réplicas coinciden con replicasSensibles del más fuerte" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="informe: cálculo correcto para un registro pequeño" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="informe: el conteo es 0 réplicas si el máximo no supera el mínimo" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="informe: registro vacío devuelve mapa vacío" classname="taller.RegistroSismicoTest" time="0.0"/>
+  <testcase name="informe: la máxima reportada es realmente la máxima" classname="taller.RegistroSismicoTest" time="0.002"/>
+  <testcase name="informe: el conteo reportado es realmente el total de sismos" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <testcase name="informe: las réplicas se calculan sobre la máxima, no sobre otra" classname="taller.RegistroSismicoTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
